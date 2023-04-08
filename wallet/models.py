@@ -25,7 +25,7 @@ class CreditCard(models.Model):
 class Wallet(models.Model):
     balance = models.DecimalField(max_digits=10, decimal_places=2)
     account = models.OneToOneField(Account, on_delete=models.CASCADE, related_name='account')
-    wallet_user = models.OneToOneField(WalletUser, on_delete=models.CASCADE)
+    wallet_user = models.ForeignKey(WalletUser, on_delete=models.CASCADE)
     credit_card = models.OneToOneField(CreditCard, on_delete=models.CASCADE)
 
 
