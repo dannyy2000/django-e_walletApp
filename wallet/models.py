@@ -31,6 +31,7 @@ class Wallet(models.Model):
 
 class Beneficiary(models.Model):
     account = models.OneToOneField(Account, on_delete=models.CASCADE)
+    wallet = models.ForeignKey(Wallet,on_delete=models.CASCADE,default=1)
 
 
 class Transaction(models.Model):
