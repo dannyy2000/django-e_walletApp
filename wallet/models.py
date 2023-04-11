@@ -54,7 +54,7 @@ class Transaction(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     date = models.DateField(auto_now_add=True)
     wallet = models.ForeignKey(Wallet, on_delete=models.CASCADE, related_name='wallet')
-    beneficiary = models.ForeignKey(Beneficiary, on_delete=models.CASCADE, related_name='beneficiary')
+    # beneficiary = models.ForeignKey(Beneficiary, on_delete=models.CASCADE, related_name='beneficiary')
 
 
 class Notification(models.Model):
