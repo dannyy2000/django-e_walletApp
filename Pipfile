@@ -8,6 +8,11 @@ django = "*"
 mysqlclient = "*"
 environ = "*"
 python-dotenv = "*"
+cloudinary = "*"
+pillow = "*"
+djoser = "*"
+djangorestframework = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
